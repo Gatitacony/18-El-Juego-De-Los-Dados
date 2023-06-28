@@ -5,7 +5,7 @@ adivinaste = 0
 palabra_singular = "palabra"
 perdiste = 0
 user_option = ""
-palabras = ["Pikachu","Charmander","Bulbasaur","Squirtle","Psyduck"]
+palabras = ["pikachu","charmander","bulbasaur","squirtle","psyduck"]
  
 
 nombre = input ("¿Cual es tu nombre? \n\n")     
@@ -77,7 +77,7 @@ while (user_option != 4):
                 palabras_adivinadas = []
 
                 
-                if(palabra_secreta == "Pikachu"):
+                if(palabra_secreta == "pikachu"):
                     print ("⌜                                         ⌝")
                     print (" Soy un Pokémon de tipo eléctrico, Tengo   ")
                     print (" las mejillas rojas y la cola en forma de  ")
@@ -86,7 +86,7 @@ while (user_option != 4):
                     print ("¿Qué Pokémon soy?                          ")
                     print ("⌞                                         ⌟")
 
-                elif(palabra_secreta == "Charmander"):
+                elif(palabra_secreta == "charmander"):
                     print ("⌜                                         ⌝")
                     print (" Soy un Pokémon de tipo fuego, Tengo la    ")
                     print (" piel naranja y la cola con una llama. Soy ")
@@ -95,7 +95,7 @@ while (user_option != 4):
                     print ("¿Qué Pokémon soy?                               ")
                     print ("⌞                                         ⌟")
                 
-                elif(palabra_secreta == "Bulbasaur"):
+                elif(palabra_secreta == "bulbasaur"):
                     print ("⌜                                         ⌝")
                     print (" Soy un Pokémon de tipo planta, Tengo una  ")
                     print (" semilla en el lomo, Tengo la piel verde y ")
@@ -105,13 +105,13 @@ while (user_option != 4):
                     print ("¿Qué Pokémon soy!                                ")
                     print ("⌞                                         ⌟")
 
-                elif(palabra_secreta == "Squirtle"):
+                elif(palabra_secreta == "squirtle"):
                     print("Soy una tortuga azul que lanza agua, Me     ")
                     print("escondo en mi caparazón cuando hay batalla. ")
                     print("¿Qué Pokémon soy?                          ")
                     print("____________________________________________________________________________________|")
                 
-                elif(palabra_secreta == "Psyduck"):
+                elif(palabra_secreta == "psyduck"):
                     print("Soy un pato amarillo que tiene jaqueca,     ")
                     print("Cuando me duele mucho, uso telequinesis")
                     print("¿Qué Pokémon soy?")
@@ -155,6 +155,7 @@ while (user_option != 4):
                         if palabra in palabras_adivinadas or palabra == " ":
                             palabra_secreta_intento += palabra
                             print(f"{palabra} ", end= "")
+
                         else:
                             palabra_secreta_intento += "_"
                             print(f"_ ", end= "")
@@ -171,7 +172,7 @@ while (user_option != 4):
                         time.sleep(3)
 
                         print ("___________________________________")
-                        time.sleep(0.3)
+                        time.sleep(0.2)
                         print      (  "    ⠀⠀⠀⠀⠀⠀⢀⣠⣤⣶⣶⣿⣿⣿⣿⣿⣶⣶⣤⣄⡀⠀⠀⠀⠀⠀ ")
                         print      (   "⠀⠀⠀⠀⠀⠀⣠⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣄⠀⠀⠀⠀")
                         print      (   "⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡄⠀⠀")
@@ -190,9 +191,9 @@ while (user_option != 4):
                         print      (   "⠀⠀⠀⠀⠀⠈⠻⣷⣦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⢀⣤⣾⠟⠁⠀⠀⠀")
                         print      (   "⠀⠀⠀⠀⠀⠀⠀⠀⠙⠻⠿⣶⣦⣤⣤⣤⣤⣤⣤⣶⡿⠟⠋⠁⠀⠀⠀⠀⠀")
                         print      (   "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-                        time.sleep (0.3)
-
-                        if (palabra_secreta == "Pikachu"): 
+                        time.sleep (0.1)
+                        
+                        if (palabra_secreta == "pikachu"): 
                                 print ("⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜")
                                 print ("⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬛")
                                 print ("⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬛💛")
@@ -215,7 +216,7 @@ while (user_option != 4):
                                 print ("⬛⬛💛💛💛💛💛⬛⬜⬜⬜⬛💛💛💛⬛⬛⬛💛💛💛")
                                 print ("💛💛💛💛💛💛💛💛⬛⬛⬛💛💛💛💛💛💛⬛💛💛💛")
                         
-                        if (palabra_secreta == "Charmander"):
+                        elif (palabra_secreta == "charmander"):
                                 print ("⬜⬜⬜⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜")
                                 print ("⬜⬜⬛🟧🟧🟧🟧⬛⬜⬜⬜⬜⬜⬜⬜")
                                 print ("⬜⬛🟧🟧🟧🟧🟧🟧⬛⬜⬜⬜⬜⬜⬜")
@@ -232,7 +233,7 @@ while (user_option != 4):
                                 print ("⬜⬛🟧🏻🏻🏻🏻🟧⬛🟧⬛⬛⬜⬜⬜")
                                 print ("⬛🟧⬛⬛⬛⬛⬛⬛🟧⬛⬜⬜⬜⬜⬜")
                                 print ("⬛⬛⬛⬜⬜⬜⬜⬛⬛⬛⬜⬜⬜⬜⬜")
-                        if (palabra_secreta == "Balbasaur"):
+                        elif (palabra_secreta == "balbasaur"):
                                 print ("⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬛⬜⬜⬜") 
                                 print ("⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬛⬛🟩⬛⬛⬜")
                                 print ("⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜🟩🟩🟩🟩⬛⬛⬛⬛🟩🟩🟩⬛🟩⬛")
@@ -260,7 +261,7 @@ while (user_option != 4):
                                 print ("⬜⬜⬜⬜⬜⬛🟦⬛⬛⬛⬛⬛⬛⬛⬛⬛🟦🟦🟦🟦🟦🟦⬛🟦🟦⬛🟦🟦⬛⬛⬛")
 
 
-                        if (palabra_secreta == "Squirtle"):
+                        elif (palabra_secreta == "squirtle"):
                                 print ("⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜")
                                 print ("⬜⬜⬜⬜⬜⬜⬜⬜⬜🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜")
                                 print ("⬜⬜⬜⬜⬜⬜⬜⬜🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜")
@@ -284,7 +285,7 @@ while (user_option != 4):
                                 print ("⬜⬜⬜🟦🟦🟦🟦🟦🟧🟧🏻🏻🏻🏻🟧🟧🟧🟧🟦🟦🟦🟦🟦")
 
                         
-                        if (palabra_secreta == "Psyduck"):
+                        elif (palabra_secreta == "psyduck"):
                                 print ("⬜⬜⬜⬜⬜⬜⬜⬛⬜⬛⬜⬜⬜⬜⬜⬜⬜⬜")
                                 print ("⬜⬜⬛⬛⬜⬛⬛⬛⬛⬛⬜⬛⬜⬜⬜⬜⬜⬜")
                                 print ("⬜⬛🟨🟨⬛⬛🟨🟨🟨🟨⬛⬛⬜⬜⬜⬜⬜⬜")
@@ -304,7 +305,6 @@ while (user_option != 4):
                                 print ("⬜⬜⬛⬛⬜🟧⬛⬛⬛⬛⬛🟧⬜⬛⬜⬜⬜⬜")
                                 print ("⬜⬜⬜⬜⬛⬛⬜⬛🟧⬜🟧⬜⬛⬜⬜⬜⬜⬜")
                                 print ("⬜⬜⬜⬜⬜⬜⬜⬜⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜")
-            
 
                                 break
         
@@ -327,5 +327,5 @@ while (user_option != 4):
     elif (user_option == 3):
         print("¡Gracias por jugar!")
         print("✨🌟💖💎🦄💎💖🌟✨🌟💖💎🦄💎💖🌟✨")
-else:
+    else:
         print("¡¡¡TE EQUIVOCASTE TONTO ENTRENADOR DE POKÉMON!!!🦗")
