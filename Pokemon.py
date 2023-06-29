@@ -6,7 +6,7 @@ palabra_singular = "palabra"
 perdiste = 0
 user_option = ""
 palabras = ["pikachu","charmander","bulbasaur","squirtle","psyduck"]
- 
+jugador = "" 
 
 nombre = input ("¿Cual es tu nombre? \n\n")     
 print (f"¡¡Holaaa {nombre}!! ¡Vamos a jugar! \n \n")   
@@ -21,6 +21,8 @@ while (user_option != 4):
     user_option = int (input())
     
     if (user_option == 1) :
+        exit = False
+        while not exit :
             print ("¡Vamos a jugar \n!")
             print (f"Jugador: {nombre}\n")
 
@@ -120,7 +122,7 @@ while (user_option != 4):
                 print("_ " * len(palabra_secreta))
 
                 while True:
-
+                    
                     palabra_usuario = input("Ingresa la palabra: ").lower().strip()
 
                     if palabra_usuario == "":
@@ -147,8 +149,9 @@ while (user_option != 4):
                     if intentos == 0:
                         print(f"¡Has perdido! La palabra secreta era: {palabra_secreta}")
                         perdiste = perdiste + 1
+                        exit (1)
                         break
-
+                        
                     palabra_secreta_intento = ""
                     
                     for palabra in palabra_secreta:
@@ -164,6 +167,7 @@ while (user_option != 4):
 
                     if palabra_secreta_intento == palabra_secreta or palabra_usuario == palabra_secreta :
                         print("¡Felicidades! ¡Has ganado!")
+                        exit (1)
                         adivinaste = adivinaste + 1
                         palabras.remove(palabra_secreta)
 
@@ -233,7 +237,7 @@ while (user_option != 4):
                                 print ("⬜⬛🟧🏻🏻🏻🏻🟧⬛🟧⬛⬛⬜⬜⬜")
                                 print ("⬛🟧⬛⬛⬛⬛⬛⬛🟧⬛⬜⬜⬜⬜⬜")
                                 print ("⬛⬛⬛⬜⬜⬜⬜⬛⬛⬛⬜⬜⬜⬜⬜")
-                        elif (palabra_secreta == "balbasaur"):
+                        elif (palabra_secreta == "bulbasaur"):
                                 print ("⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬛⬜⬜⬜") 
                                 print ("⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬛⬛🟩⬛⬛⬜")
                                 print ("⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜🟩🟩🟩🟩⬛⬛⬛⬛🟩🟩🟩⬛🟩⬛")
@@ -307,7 +311,8 @@ while (user_option != 4):
                                 print ("⬜⬜⬜⬜⬜⬜⬜⬜⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜")
 
                                 break
-        
+                        
+                                
         
     elif ( user_option == 2):
             print("Cargando resultados...💣")
@@ -324,7 +329,9 @@ while (user_option != 4):
             input ("presiona enter para continuar Jugando:") 
             time.sleep(1)
     
-    elif (user_option == 3):
+    elif (user_option == 3): 
+         print ("Sabias que hay 1015 Pokémon registrados en la Pokedex")
+    elif (user_option == 4):
         print("¡Gracias por jugar!")
         print("✨🌟💖💎🦄💎💖🌟✨🌟💖💎🦄💎💖🌟✨")
     else:
