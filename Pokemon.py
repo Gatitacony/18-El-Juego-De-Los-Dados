@@ -6,7 +6,7 @@ palabra_singular = "palabra"
 perdiste = 0
 user_option = ""
 palabras = ["pikachu","charmander","bulbasaur","squirtle","psyduck"]
- 
+jugador = "" 
 
 nombre = input ("¿Cual es tu nombre? \n\n")     
 print (f"¡¡Holaaa {nombre}!! ¡Vamos a jugar! \n \n")   
@@ -336,7 +336,9 @@ while (user_option != 4):
             input ("presiona enter para continuar Jugando:") 
             time.sleep(1)
     
-    elif (user_option == 3):
+    elif (user_option == 3): 
+         print ("Sabias que hay 1015 Pokémon registrados en la Pokedex")
+    elif (user_option == 4):
         print("¡Gracias por jugar!")
         print("✨🌟💖💎🦄💎💖🌟✨🌟💖💎🦄💎💖🌟✨")
 else:
