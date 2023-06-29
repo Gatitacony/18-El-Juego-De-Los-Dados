@@ -24,7 +24,7 @@ while (user_option != 4):
         exit = False
         while not exit :
             print ("¡Vamos a jugar \n!")
-            print (f"Jugador: {nombre}\n")
+            print (f"Jugador:  {nombre}\n")
 
             print ("______________________________")
 
