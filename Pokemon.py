@@ -24,10 +24,10 @@ while (user_option != 4):
         exit = False
         while not exit :
                 print ("¡Vamos a jugar \n!")
-                print (f"Jugador: {nombre}\n")
+                print (f"Jugador: ¡Soy {nombre} de Pueblo Paleta, y estoy destinado a convertirme en el Maestro Pokémon Número 1 del mundo!\n")
 
                 print ("______________________________")
-
+                time.sleep (3)
                 print ("⬜⬜⬜⬜⬛⬛⬛⬛⬛⬛⬜⬜⬜")
                 print ("⬜⬜⬜⬛🟥🟥🟥🟥🟥🟥⬛⬜⬜")
                 print ("⬜⬜⬛🟥🟥🟥🟥🟥🟥🟥🟥⬛⬜")
