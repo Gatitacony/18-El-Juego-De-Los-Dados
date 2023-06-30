@@ -21,8 +21,20 @@ while (user_option != 4):
     user_option = int (input())
     
     if (user_option == 1) :
-        exit = False
-        while not exit :
+            #¡opción si el usuario adivino todas las palabras!
+            if len(palabras) == 0:
+                print("     __^__                     __^__  ")
+                print("    ( ___ )-------------------( ___ ) ")
+                print("     | / |   ¡Felicidades!     | / |  ")
+                print("     | / |     Le acertaste    | / |  ")
+                print("     |___|           a todas.  |___|  ")
+                print("    (_____)-------------------(_____) ")
+            
+            else:
+                print (f"Te quedan {len (palabras)} palabras por adivinar.")
+                palabra_secreta = random.choice(palabras)
+                intentos = 6
+                letras_adivinadas = []
                 print ("¡Vamos a jugar \n!")
                 print (f"Jugador: ¡Soy {nombre} de Pueblo Paleta, y estoy destinado a convertirme en el Maestro Pokémon Número 1 del mundo!\n")
 
